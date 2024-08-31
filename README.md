@@ -1,4 +1,4 @@
-## SPI Communication Service for ADC Data
+## STM32 Project - SPI Communication between 2 STM32 boards
 
 The SPI Communication Service enables the transfer of ADC conversion results between two STM32 microcontrollers using the SPI protocol. This service allows the master STM32 to send ADC data, which is acquired in DMA mode, to the slave STM32.
 
@@ -12,15 +12,6 @@ The SPI Communication Service enables the transfer of ADC conversion results bet
 
 - **Receive ADC Data**: On the slave STM32, receive and process the ADC results transmitted by the master. Implement data handling and parsing to correctly interpret incoming data.
 
-- **Error Handling**: Include mechanisms to detect and manage communication errors to ensure reliable data transfer between the master and slave STM32 boards.
-
-### Available APIs
-
-- **`SPI_TransmitADCData()`**: Transmits ADC conversion results from the master STM32 to the slave via SPI.
-  
-- **`SPI_ReceiveADCData()`**: Receives and processes ADC data sent from the master STM32 on the slave board.
-
-- **`ADC_DMA_Config()`**: Configures the ADC on the master STM32 for DMA mode to enable continuous data acquisition.
 
 ### Usage
 To use the SPI Communication Service for ADC data:
